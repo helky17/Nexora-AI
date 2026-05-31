@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,850;1,300&family=Playfair+Display:ital,wght@0,700;1,700;1,900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  background-color: #0A0A0A;
+  color: #F5F5F5;
+}
+
+body {
+  background-color: #0A0A0A;
+  color: #F5F5F5;
+}
+
+/* Custom Editorial Classes */
+.font-serif-editorial {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans-editorial {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-mono-editorial {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.editorial-h1 {
+  font-family: 'Inter', sans-serif;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 850;
+}
+
+.stat-focus {
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+}
+
+.text-stroke-active {
+  -webkit-text-stroke: 1.2px #38bdf8;
+  color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+}
+
+.accent-border {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.pulse-indicator {
+  animation: pulseGlow 2s infinite ease-in-out;
+}

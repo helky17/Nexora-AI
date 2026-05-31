@@ -1,0 +1,6 @@
+{
+  "name": "Inventory Nexora AI",
+  "description": "Solusi manajemen bisnis modern yang mengintegrasikan pengelolaan gudang, stok barang, penjualan multi-marketplace, pengemasan, hingga customer management dan laporan analisis bertenaga AI.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
